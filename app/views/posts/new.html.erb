@@ -1,0 +1,22 @@
+<h1>New Post</h1>
+
+<%= form_with :model => @posts do |form| %>
+  <p>
+    <%= form.label "title", "What should we title this post?"%>
+    <%= form.text_field "title" %>
+  </p>
+  <p>
+    <%= form.label "posted_on", "When did this happen?" %>
+    <%= form.date_field "posted_on" %>
+  </p>
+    <p>
+    <%= form.label "description", "What did you do?"%>
+    <%= form.text_field "description" %>
+  </p>
+  <p>
+    <%= form.hidden_field "place_id" %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
