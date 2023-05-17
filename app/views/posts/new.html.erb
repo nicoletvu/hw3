@@ -1,3 +1,9 @@
+<style>
+  html * {
+    font-family: Arial;
+  }
+</style>
+
 <h1>New Post</h1>
 
 <%= form_with :model => @post do |form| %>
@@ -20,3 +26,5 @@
     <%= form.submit %>
   </p>
 <% end %>
+
+<p><a href="/places/ <%= @post["place_id"] %>"> Nevermind - Back To Previous Page</a></p>

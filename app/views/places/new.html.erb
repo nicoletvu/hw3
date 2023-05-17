@@ -1,4 +1,9 @@
 <!-- form for submitting a new place -->
+<style>
+  html * {
+    font-family: Arial;
+  }
+</style>
 
 <%= form_with :model => @place do |form| %>
   <p>
@@ -7,3 +12,7 @@
   </p>
   <%= form.submit %>
 <% end %>
+
+<p>
+  <a href="/places">Nevermind - Back To All Places</a>
+</p>
