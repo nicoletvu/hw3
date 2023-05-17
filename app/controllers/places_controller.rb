@@ -7,6 +7,7 @@ class PlacesController < ApplicationController
   def new
   # renders places/new view with form to create a new place
     @place = Place.new
+    @posts = Post.new
   end
 
   def show
